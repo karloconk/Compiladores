@@ -1,0 +1,39 @@
++-----------------------+------------------------------+------------------------+---------------------------------+------------------+
+|   Comment about the code used to develop this piece of software:                                                                   |
+|------------------------------------------------------------------------------------------------------------------------------------|
+|   This piece of software (the whole package) was inspired by "Buttercup compiler"              |
+|   Copyright (C) 2013 Ariel Ortiz, ITESM CEM.                                                                                       |
+|   Which was extended to us by himself and with the use of a GNU General Public License.                                            |
++------------------------------------------------------------------------------------------------------------------------------------+
+
+DeepLingo Compiler Version 0.5
+------------------------------
+
+Included in this release:
+
+   * Lexical analysis of a Deep Lingo program
+   * Syntactic analysis
+   * AST construction
+   * Semantic analysis
+   * CIL code generation
+
+To build, at the terminal type:
+
+    make
+   
+To run, type:
+
+    ./deepLingo.exe <file_name> <ilcode_recipient_name>
+    ilasm <ilcode_recipient_name>.il
+    ./<ilcode_recipient_name>.exe
+    
+Where <file_name> is the name of a  Deep Lingo source file. You can try with
+these files:
+
+   * ex01_arrays.deep
+   * ex02_binary.deep
+   * ex03_factorial.deep
+   * ex04_literals.deep
+   * ex05_next_day.deep
+   * ex06_palindrome.deep
+   * ex07_ultimate.deep
